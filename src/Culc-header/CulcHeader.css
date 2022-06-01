@@ -1,0 +1,20 @@
+.header-container{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    border-radius: 3px;
+    min-height: 100px;
+    max-width: 380px;
+    color: rgb(209, 212, 221);
+    background-color: #2A2F47;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: end;
+    word-break: break-word;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-item{
+    text-align: end;
+}

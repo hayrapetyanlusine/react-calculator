@@ -1,0 +1,19 @@
+.body-container{
+    margin: 0 auto;
+    max-width: 400px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.body-item{
+    font-weight: bold;
+    font-size: 20px;
+    background: #2A2F47;
+    color: rgb(209, 212, 221);
+    border: solid #070c2059;
+}
+
+.body-item:nth-child(1),:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(8), :nth-child(12), :nth-child(16), :nth-child(20), :nth-child(24) {
+    color: rgba(209, 212, 221, 0.514);
+}
