@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useMemo } from 'react';
-import  CulcBody  from './Culc-body/CulcBody';
-import { CulcHeader } from './Culc-header/CulcHeader';
+import  CulcBody  from './Calculator/Culc-body/CulcBody';
+import { CulcHeader } from './Calculator/Culc-header/CulcHeader';
 
 
 function App() {
