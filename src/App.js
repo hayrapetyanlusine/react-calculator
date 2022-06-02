@@ -111,9 +111,10 @@ function App() {
     <div className="App">
       <CulcHeader accValue={accValue} screenValue={screenValue}/>
       <CulcBody state={state} accValue={accValue} 
-        onChange={(number) => {
-          setScreenValue("")
-          setAccValue(accValue + number);
+        onChange={(number) => {     
+          const limit = accValue.length < 40; 
+          limit ? setAccValue(accValue + number) : setAccValue(accValue, alert("You can't use more than 40 characters"))
+          setScreenValue("");
         }}
         onClearResult={() => {
           setAccValue("");
@@ -123,7 +124,11 @@ function App() {
           setAccValue(accValue.slice(0, -1));
         }}
         onAllValue={() => {
-          setAccValue(eval(accValue));
+          try {
+            setAccValue(eval(accValue));
+          } catch (err) {
+            console.log(err);
+          }
         }}
         onCalcSquared={() => {
           setAccValue(accValue * accValue);
@@ -138,7 +143,7 @@ function App() {
           setAccValue(1/accValue);
         }}
         onPi={() => {
-          setAccValue(3.1415926536);
+          setAccValue(3.1415926536 + accValue);
         }}
       />
     </div>

@@ -3,8 +3,8 @@
     align-items: end;
     justify-content: flex-end;
     border-radius: 3px;
-    min-height: 100px;
-    max-width: 380px;
+    min-height: 120px;
+    max-width: 370px;
     color: rgb(209, 212, 221);
     background-color: #2A2F47;
     font-weight: bold;
@@ -12,7 +12,7 @@
     text-align: end;
     word-break: break-word;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .header-item{
